@@ -9,7 +9,7 @@ services:
       - 9000:9000
       - 9001:9001
     env_file:
-      - ./.env.prod
+      - ./.env
 
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
