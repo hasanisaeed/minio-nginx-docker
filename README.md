@@ -1,6 +1,6 @@
 Configuration for MinIO with Nginx on Docker 
 
-----
+## Step 1: Create minio user
 - Create `minio` user
     ```bash
     sudo useradd minio
@@ -11,7 +11,7 @@ Configuration for MinIO with Nginx on Docker
     ```bash
     sudo passwd minio
     ```
-
+## Step 2: Create shared folder
 - Make minIO directory and change owner to `minio` user:
 
 
@@ -19,7 +19,7 @@ Configuration for MinIO with Nginx on Docker
     mkdir -p /usr/local/share/minio
     sudo chown -R minio:minio /usr/local/share/minio
     ```
-
+## Step 3: Create docker container:
 - Create docker container with:
 
     ```bash
