@@ -1,5 +1,5 @@
 Configuration for MinIO with Nginx on Docker 
-
+# Initial Config 🦜
 ## Step 1: Create minio user
 - Create `minio` user
     ```
@@ -19,6 +19,8 @@ Configuration for MinIO with Nginx on Docker
     mkdir -p /usr/local/share/minio
     sudo chown -R minio:minio /usr/local/share/minio
     ```
+
+# Docker 🐳
 ## Step 3: Create docker container:
 - Create docker container with:
 
@@ -28,7 +30,7 @@ Configuration for MinIO with Nginx on Docker
     > This command create your `s3` container. Check it with `docker ps` command.
 
 
-# Nginx
+# Nginx 🔥
 ## Step 4: Create subdomain
 Open `/etc/host` file and add your subdomain:
 > 127.0.0.1       localhost 
@@ -37,7 +39,7 @@ Open `/etc/host` file and add your subdomain:
 
 So at `/etc/nginx/sites-enabled/default` edit server_name key as `s3.localhost`.
 
-    ```
+    ...
     // add this block at the end of `default` file:
     server {
         listen 80;
@@ -51,16 +53,16 @@ So at `/etc/nginx/sites-enabled/default` edit server_name key as `s3.localhost`.
             proxy_pass http://127.0.0.1:9001/;
         }
     }
-    ```
+    
 
 Then restart nginx:
 
-    ```
+    
     sudo service nginx reload
-    ```
+    
 
- # Run MinIO
+ # Run MinIO 🏃🏽‍♂️
  Go to your browser and open [s3.localhost](http://s3.localhost).
 
- Username and password is in `.env` file. Login and create your `Buckets`.
+ Username and password is in `.env` file. Login and create your `Buckets`. 🌟
 
