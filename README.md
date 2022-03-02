@@ -60,6 +60,7 @@ Then restart nginx:
     ```
 
  # Run MinIO
- Go to your browser and open [s3.localhost](s3.localhost)
+ Go to your browser and open [http://s3.localhost](s3.localhost).
+ 
  Username and password is in `.env` file. Login and create your `Buckets`.
 
