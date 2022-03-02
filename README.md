@@ -1,2 +1,1 @@
-# MinIO-Nginx-Docker
-Configuration for MinIIO with Nginx on Docker 
+Configuration for MinIO with Nginx on Docker 
