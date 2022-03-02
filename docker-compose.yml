@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  minio:
+    image: minio/minio:latest
+    container_name: s3
+    command: server --console-address ":9001" /data
+    ports:
+      - 9000:9000
+      - 9001:9001
+    env_file:
+      - ./.env.prod
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    restart: always
+    volumes:
+      - /usr/local/share/minio:/data
+
+    networks:
+      - stocks_network
+
+networks:
+  stocks_network:
+    external: true
