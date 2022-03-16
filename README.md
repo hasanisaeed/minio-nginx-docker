@@ -1,7 +1,7 @@
 # Configuration MinIO with Nginx on Docker 
 ## Initial Config 🦜
 ### Step 1:  minio user
-Create `minio` user
+Create `minio` user with:
     
     sudo useradd minio
     
