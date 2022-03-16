@@ -19,10 +19,3 @@ services:
     restart: always
     volumes:
       - /usr/local/share/minio:/data
-
-    networks:
-      - stocks_network
-
-networks:
-  stocks_network:
-    external: true
