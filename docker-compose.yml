@@ -20,7 +20,7 @@ services:
     volumes:
       - /usr/local/share/minio:/data
     
-    # < your_shared_network >: use network when your containers are in the same network.
+    # < your_shared_network >: `use networks` when your containers are in the same network.
     networks:
       - your_shared_network
 
