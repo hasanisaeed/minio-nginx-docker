@@ -19,3 +19,11 @@ services:
     restart: always
     volumes:
       - /usr/local/share/minio:/data
+    
+    # < your_shared_network >: use network when your containers are in the same network.
+    networks:
+      - your_shared_network
+
+networks:
+  your_shared_network:
+    external: true
