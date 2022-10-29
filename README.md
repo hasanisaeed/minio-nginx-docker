@@ -1,4 +1,9 @@
 # Configuration MinIO with Nginx on Docker 
+
+### First of all clone this repository
+
+--------------
+
 ## Initial Config 🦜
 ### Step 1:  minio user
 Create `minio` user with:
