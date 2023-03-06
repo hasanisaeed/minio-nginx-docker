@@ -2,7 +2,7 @@
 
 ### First of all clone this repository
 
-After clonig:
+After cloning:
 
 ```bash
 cd minio-nginx-docker/
