@@ -11,7 +11,7 @@ Create `minio` user with:
     sudo useradd minio
     
 
-You then add a password for the `minio` user by using the `passwd` command:
+Then add a password for the `minio` user by using the `passwd` command:
     
     sudo passwd minio
     
