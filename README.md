@@ -2,6 +2,12 @@
 
 ### First of all clone this repository
 
+After clonig:
+
+```bash
+cd minio-nginx-docker/
+```
+
 --------------
 
 ## Initial Config 🦜
