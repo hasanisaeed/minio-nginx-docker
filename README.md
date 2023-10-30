@@ -40,7 +40,7 @@ Create docker container with:
 
 ## Nginx 🔥
 ### Step 4: Create subdomain
-Open `/etc/host` file and add your subdomain:
+Open `/etc/hosts` file and add your subdomain:
 
     127.0.0.1       localhost 
     127.0.0.1       s3.localhost # You can rename `s3` with desired name.
