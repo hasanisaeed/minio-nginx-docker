@@ -24,7 +24,7 @@ Then add a password for the `minio` user by using the `passwd` command:
 ### Step 2: Create shared folder
 Make minIO directory and change owner to `minio` user:
     
-    mkdir -p /usr/local/share/minio
+    sudo mkdir -p /usr/local/share/minio
     sudo chown -R minio:minio /usr/local/share/minio
     
 
